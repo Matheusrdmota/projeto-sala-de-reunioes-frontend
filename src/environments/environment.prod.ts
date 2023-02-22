@@ -1,3 +1,6 @@
+declare let window: any;
+	
 export const environment = {
-  production: true
+  production: true,
+  ...window["env"],
 };
